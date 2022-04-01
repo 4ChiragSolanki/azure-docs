@@ -49,7 +49,7 @@ LRS does not require a specific naming convention for backup files. It scans all
 
 If you're migrating several databases, you need to:
 
-- Place backup files for each database in a separate folder on Azure Blob Storage in a flat-file structure. For example, use separate database folders: `bolbcontainer/database1/files`, `blobcontainer/database2/files`, etc.
+- Place backup files for each database in a separate folder on Azure Blob Storage in a flat-file structure. For example, use separate database folders: `blobcontainer/database1/files`, `blobcontainer/database2/files`, etc.
 - Don't use nested folders inside database folders as this structure is not supported. For example, do not use subfolders: `blobcontainer/database1/subfolder/files`.
 - Start LRS separately for each database.
 - Specify different URI paths to separate database folders on Azure Blob Storage. 
